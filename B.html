@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲平台</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 1200px; /* 調整整體寬度 */
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 每排固定 5 個 */
+            gap: 20px; /* 卡片之間的間距 */
+        }
+        .game-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-card img {
+            width: 100%; /* 改為填滿卡片 */
+            height: 150px;
+            object-fit: cover;
+        }
+        .game-title {
+            font-size: 16px;
+            padding: 10px 0;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+        .game-title a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .game-title a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>我的遊戲平台</h1>
+    </header>
+    <main>
+        <div class="container">
+            <!-- 雨林之戰 -->
+            <div class="game-card">
+                <a href="game/index.html">
+                    <img src="img.PNG" alt="雨林之戰">
+                </a>
+                <div class="game-title">
+                    <a href="game/index.html">雨林之戰<br>(個人製作)</a>
+                </div>
+            </div>
+            <!-- 眾果出征記 -->
+            <div class="game-card">
+                <a href="game2/index.html">
+                    <img src="img2.jpg" alt="眾果出征記">
+                </a>
+                <div class="game-title">
+                    <a href="game2/index.html">眾果出征記<br>(團隊共製)</a>
+                </div>
+            </div>
+            <!-- 可以繼續新增更多遊戲卡片 -->
+        </div>
+    </main>
+</body>
+</html>
